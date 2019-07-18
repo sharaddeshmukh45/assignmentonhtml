@@ -1,9 +1,10 @@
 @import "variable";
+@import "mixin";
 
 body{
-   
-    font-family: $font;
+    font-family: loto-med;
 }
+
 .container{
     width: 80%;
     margin:auto;
@@ -21,6 +22,7 @@ header{
             display: flex;
             align-items: center;
             li{
+               
                 list-style-type: none;
                 margin: 0px 5px;
                 text-align: center;
@@ -34,7 +36,19 @@ header{
                     button{
                         height: 40px;
                         box-sizing: border-box;
+                        background-color: $nav-blue-btn;
+                        border: 1px solid ;
+                        border-radius: 3px;
+                        color: white;
+                        font-size: 14px;
+                        font-weight: bold;
 
+                    }
+
+                    .nav-white-btn{
+                        background: white;
+                        border: 1px solid $nav-blue-btn;
+                        color: $nav-blue-btn;
                     }
                     
                 }
@@ -42,12 +56,7 @@ header{
         }
     }
 
-    #logo{
-       
-        margin: 0px;
-        padding: 0px;
-    }
-
+  
     #nav-btn{
         display: flex;
         align-items: center;
@@ -56,6 +65,7 @@ header{
         button{
             height: 40px;
             width: 37px;
+            margin: 0px 5px;
         }
        
             
@@ -63,8 +73,186 @@ header{
 
 }
 
-.nav-blue-btn{
-    background-color: #032149;
-    border: #032149;
+
+
+.showcase{
+    position: relative;
+    display: inline-block;
+    background-color: gray;
+    min-height: 600px;
     
+    .showcase-img{
+        width: 100%;
+        opacity: .3;
+        min-height: 600px;
+    }
+
+    .newsbox {
+        background: $yellow;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+
+        
+        .marquee{
+            display: flex;
+            align-items: center;
+              
+        }
+    }
+
+    .quote{
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        color: white;
+        width: 100%;
+        margin: auto;
+
+        button{
+            background-color: $yellow;
+            height: 55px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+            color: white;
+        }
+
+        h1{
+            font-size: 50px;
+        }
+    }
+    
+}
+
+
+.block-bar{
+    position: relative;
+}
+
+.box-list{
+    top : -150px;
+    position: absolute;
+    width: 100%;
+}
+
+.boxes{
+    display: flex;
+    flex-flow: wrap;
+   
+    align-items: center;
+    button{
+        flex-basis: 23%;
+        text-align: center;
+        background-color: $nav-blue-btn;
+        border: 1px solid $nav-blue-btn;
+        border-radius: 5px;
+        margin: 0px 10px;
+        color: white;
+        font-size: 20px;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+
+    img{
+        margin-top: 40px;
+    }
+    p{
+        padding: 0px 30px;
+    }
+
+    .current{
+        background-color:$current-box-col;
+    }
+}
+
+.box-menu{
+    margin-top: 140px;
+}
+
+.box-menu{
+    background-color:$current-box-col;
+    padding: 30px;
+    color: white;
+    p{
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+
+    input[type="text"] , select, option{
+        width: 220px;
+        height: 50px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border:none;
+    }
+
+    select , option{
+        -webkit-appearance: none;
+        width: 230px;
+    }
+
+    
+}
+
+.form-part-text{
+    display: flex;
+    flex-flow: wrap;
+
+    div{
+        flex-basis: 25%;
+    }
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+
+    h3{
+        margin-right: 30px;
+    }
+}
+
+.advance{
+    align-items: center;
+    margin-top: 25px;
+    font-size: 20px;
+    img{
+        background: white;
+        border-radius: 100px;
+        margin-right: 10px;
+    }
+   
+        button{
+            background: $nav-blue-btn;
+            width: 150px;
+            height: 40px;
+            border: 0px;
+            border-radius: 5px;
+            
+        }
+}
+
+table,tr,td{
+    border: 1px solid $nav-blue-btn;
+    border-collapse: collapse;     
+    text-align: center;
+}
+
+tr,td{
+    width: 150px;
+    height: 50px;
+}
+
+.property-blue{
+    background-color: $nav-blue-btn;
+}
+.value{
+    background-color: white;
+    color: black;
+}
+
+.property-yellow{
+    background-color: #d6ab28;
 }

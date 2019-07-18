@@ -1,5 +1,9 @@
+@font-face {
+  font-family: loto-med;
+  src: url(../fonts/Lato-Medium.woff); }
+
 body {
-  font-family: Lato-Black; }
+  font-family: loto-med; }
 
 .container {
   width: 80%;
@@ -36,10 +40,17 @@ header {
           header nav ul li a button {
             height: 40px;
             -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  header #logo {
-    margin: 0px;
-    padding: 0px; }
+            box-sizing: border-box;
+            background-color: #032149;
+            border: 1px solid;
+            border-radius: 3px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold; }
+          header nav ul li a .nav-white-btn {
+            background: white;
+            border: 1px solid #032149;
+            color: #032149; }
   header #nav-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,8 +61,156 @@ header {
     margin: 0px 3px; }
     header #nav-btn button {
       height: 40px;
-      width: 37px; }
+      width: 37px;
+      margin: 0px 5px; }
 
-.nav-blue-btn {
-  background-color: #032149;
-  border: #032149; }
+.showcase {
+  position: relative;
+  display: inline-block;
+  background-color: gray;
+  min-height: 600px; }
+  .showcase .showcase-img {
+    width: 100%;
+    opacity: .3;
+    min-height: 600px; }
+  .showcase .newsbox {
+    background: #d7ad2c;
+    position: absolute;
+    top: 0px;
+    width: 100%; }
+    .showcase .newsbox .marquee {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .showcase .quote {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: auto; }
+    .showcase .quote button {
+      background-color: #d7ad2c;
+      height: 55px;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 3px;
+      color: white; }
+    .showcase .quote h1 {
+      font-size: 50px; }
+
+.block-bar {
+  position: relative; }
+
+.box-list {
+  top: -150px;
+  position: absolute;
+  width: 100%; }
+
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .boxes button {
+    -ms-flex-preferred-size: 23%;
+    flex-basis: 23%;
+    text-align: center;
+    background-color: #032149;
+    border: 1px solid #032149;
+    border-radius: 5px;
+    margin: 0px 10px;
+    color: white;
+    font-size: 20px;
+    height: 250px;
+    margin-bottom: 15px; }
+  .boxes img {
+    margin-top: 40px; }
+  .boxes p {
+    padding: 0px 30px; }
+  .boxes .current {
+    background-color: #4a6084; }
+
+.box-menu {
+  margin-top: 140px; }
+
+.box-menu {
+  background-color: #4a6084;
+  padding: 30px;
+  color: white; }
+  .box-menu p {
+    font-size: 20px;
+    margin: 10px 0px; }
+  .box-menu input[type="text"], .box-menu select, .box-menu option {
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: none; }
+  .box-menu select, .box-menu option {
+    -webkit-appearance: none;
+    width: 230px; }
+
+.form-part-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap; }
+  .form-part-text div {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%; }
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .radio h3 {
+    margin-right: 30px; }
+
+.advance {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 25px;
+  font-size: 20px; }
+  .advance img {
+    background: white;
+    border-radius: 100px;
+    margin-right: 10px; }
+  .advance button {
+    background: #032149;
+    width: 150px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px; }
+
+table, tr, td {
+  border: 1px solid #032149;
+  border-collapse: collapse;
+  text-align: center; }
+
+tr, td {
+  width: 150px;
+  height: 50px; }
+
+.property-blue {
+  background-color: #032149; }
+
+.value {
+  background-color: white;
+  color: black; }
+
+.property-yellow {
+  background-color: #d6ab28; }
