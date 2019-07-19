@@ -8,54 +8,62 @@
     </head>
     <body>
          <!-- Brand Logo and Navbar -->
-        <header class="container"> 
+        <header class="container">
+                 
                 <div id="logo">
                     <img src="./image/icons/logo.png">
                 </div>
                 <nav>
-                    <ul>
-                        <li class="nav-link"><a href="#">about us</a></li>
-                        <li class="nav-link"><a href="#">Gallery</a></li>
-                        <li class="nav-link"><a href="#">M2 services</a></li>
-                        <li class="nav-link"><a href="#">news</a></li>
-                        <li class="nav-link"><a href="#">faq</a></li>
-                        <li class="nav-link"><a href="#">blog</a></li>
-                        <li class="nav-link"><a href="#">contact us</a></li>
-                        <li class="nav-link ">
-                           <a href="#">
-                                <button class="nav-white-btn">Login/register</button>
-                            </a>
-                        </li>
 
-                        <li class="nav-link ">
-                                <a href="#">
-                                        <button >News Letter Signup</button>
+                
+                    <div class="head-text">
+                        <p>21 Sep 2016 العربية</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="nav-link"><a href="#">about us</a></li>
+                            <li class="nav-link"><a href="#">Gallery</a></li>
+                            <li class="nav-link"><a href="#">M2 services</a></li>
+                            <li class="nav-link"><a href="#">news</a></li>
+                            <li class="nav-link"><a href="#">faq</a></li>
+                            <li class="nav-link"><a href="#">blog</a></li>
+                            <li class="nav-link"><a href="#">contact us</a></li>
+                            <li class="nav-link ">
+                            <a href="#">
+                                    <button class="nav-white-btn">Login/register</button>
                                 </a>
                             </li>
-                        <li  id="nav-btn">
-                            
-                            <a href="#">
-                                <button>
-                                    <img src="./image/icons/tweeter.svg">
-                                </button>
-                            </a>
-                            <a href="#">
-                                <button >
-                                    <img src="./image/icons/insta.svg">
-                                </button>  
-                            </a>
-                            <a href="#">
-                                <button >
-                                    <img src="./image/icons/google.svg">
-                                </button>
-                            </a>
-                            <a href="#">
-                                <button>
-                                     <img src="./image/icons/fb.svg">
-                                </button>
-                            </a>
-                        </li>
-                    </ul>
+
+                            <li class="nav-link ">
+                                    <a href="#">
+                                            <button >News Letter Signup</button>
+                                    </a>
+                                </li>
+                            <li  id="nav-btn">
+                                
+                                <a href="#">
+                                    <button>
+                                        <img src="./image/icons/tweeter.svg">
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button >
+                                        <img src="./image/icons/insta.svg">
+                                    </button>  
+                                </a>
+                                <a href="#">
+                                    <button >
+                                        <img src="./image/icons/google.svg">
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button>
+                                        <img src="./image/icons/fb.svg">
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>     
         </header>
         <!-- marquee news box -->
@@ -89,6 +97,10 @@
 
         <section class="block-bar">
             <div class="box-list">
+
+                <div class="diamond">
+                   
+                </div>
                 <div class="boxes container">
                         <button class="current ">
                             <img src="./image/values-estimator.png">
@@ -217,7 +229,7 @@
                             <span>Advanced search</span>
                         </div>
 
-                        <div>
+                        <div class="adv-btn">
                             <button>Calculate</button>
                         </div>
                     </div>
@@ -227,20 +239,46 @@
 
                     <div>
                         <h1>Output</h1>
-                        <div>
-                            <table>
-                                <tr class="property-blue">
-                                    <th>Property (KD)</th>
-                                    <th class="property-yellow">Land (KD)</th>
-                                    <th>Building (KD)</th>
-                                   
-                                </tr>
-                                <tr class="value">
-                                    <td >1,702,500</td>
-                                    <td >943,000</td>
-                                    <td >759,500</td>
-                                </tr>
-                            </table>
+                        <div class="table">
+                            <div class="content">
+                                <div>
+                                    <div class="blue-tab">
+                                            <h3 >Property (KD)</h3>
+                                    </div>
+                                    <div class="value">
+                                        <h3 >1,702,500</h3>
+                                    </div>   
+                                </div>
+                                <div>
+                                    <div class="yellow-tab">
+                                            <h3 >Land (KD)</h3>
+                                    </div>
+                                    <div class="value">
+                                        <h3>943,000</h3>
+                                    </div>     
+                                </div>
+                                <div>
+                                    <div class="blue-tab">
+                                            <h3 >Building (KD)</h3>
+                                    </div>
+                                    <div class="value">
+                                        <h3  >759,500</h3>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="share-with">
+                                    <div>
+                                        <h4>Share with</h4>
+                                    </div>
+                                    <div class="social-meadi-icon">
+
+                                        <a href="#"><div><img src="./image/twitter.png"></div></a>
+                                        <a href="#"><div><img src="./image/facebook.png"></div></a>
+                                        <a href="#"><div><img src="./image/outlook.png"></div></a>
+                                        <a href="#"><div><img src="./image/instagram.png">  </div></a>
+                                    </div>
+                                </div>
                         </div>
                     </div>
     
@@ -271,8 +309,243 @@
                             <img src="./image/coming-soon.png">
                             <p>Coming Soon</p>
                     </button>
+        </section >
+
+        <section class="contact-bar">
+            <div>
+                <h1>Do you want to sell your property?</h1>
+                <button>Contact Us</button>
+            </div>
+        </section>
+
+
+        <!-- Property-bar -->
+        <section class="new-proprety-bar">
+            <div  class="container">
+                <div >
+                    <h1>New properties for you</h1>
+                </div>
+                
+                    <div class="proterties">
+                    
+                        <div class="propertybox">
+                            <div class="property-img">
+                                <img src="./image/property-1.jpg" alt="property 1 image">
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img  src="./image/location.png" alt="location image">
+                                            <p>paris (france)</p>
+                                        </td>
+                                        <td class="right-side">
+                                            <img src="./image/l.svg" alt="size image">
+                                            <p>134 SQ FT</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td >
+                                            <img src="./image/showe.svg" alt="shower image">
+                                            <p>3</p>
+                                            <img src="./image/bed.svg" alt="bed image">
+                                            <p>2</p>
+                                        </td>
+                                        <td class="right-side">
+                                            <p>€  430000</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="property-name">
+                                    <h3>Trentino-Alto Adige</h3>
+                                    <p>Aute irure dolor in reprehenderit in 
+                                        voluptate velit es sint 
+                                        cillumor dolore 
+                                        eu</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="propertybox">
+                            <div class="property-img">
+                                <img src="./image/property-2.jpg" alt="property 2 image">
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="./image/location.png" alt="location image">
+                                            <p>paris (france)</p>
+                                        </td>
+                                        <td class="right-side">
+                                            <img src="./image/l.svg" alt="size image">
+                                            <p>134 SQ FT</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td >
+                                            <img src="./image/showe.svg" alt="shower image">
+                                            <p>3</p>
+                                            <img src="./image/bed.svg" alt="bed image">
+                                            <p>2</p>
+                                        </td>
+                                        <td class="right-side">
+                                            <p>€  430000</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="property-name">
+                                    <h3>Trentino-Alto Adige</h3>
+                                    <p>Aute irure dolor in reprehenderit in voluptate velit es sint cillumor dolore eu</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="propertybox">
+                            <div class="property-img">
+                                <img src="./image/property-3.jpg" alt="property 3 image">
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="./image/location.png" alt="location image">
+                                            <p>paris (france)</p>
+                                        </td>
+                                        <td class="right-side">
+                                            <img src="./image/l.svg" alt="size image">
+                                            <p>134 SQ FT</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td >
+                                            <img src="./image/showe.svg" alt="shower image">
+                                            <p>3</p>
+                                            <img src="./image/bed.svg" alt="bed image">
+                                            <p>2</p>
+                                        </td>
+                                        <td class="right-side">   
+                                            <p>€  430000</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="property-name">
+                                    <h3>Trentino-Alto Adige</h3>
+                                    <p>Aute irure dolor in reprehenderit in voluptate velit es sint cillumor dolore eu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="propertybox">
+                                <div class="property-img">
+                                    <img src="./image/property-3.jpg" alt="property 3 image">
+                                </div>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="./image/location.png" alt="location image">
+                                                <p>paris (france)</p>
+                                            </td>
+                                            <td class="right-side">
+                                                <img src="./image/l.svg" alt="size image">
+                                                <p>134 SQ FT</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                <img src="./image/showe.svg" alt="shower image">
+                                                <p>3</p>
+                                                <img src="./image/bed.svg" alt="bed image">
+                                                <p>2</p>
+                                            </td>
+                                            <td class="right-side">   
+                                                <p>€  430000</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="property-name">
+                                        <h3>Trentino-Alto Adige</h3>
+                                        <p>Aute irure dolor in reprehenderit in voluptate velit es sint cillumor dolore eu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
         </section>
         
+        <section class="container">
+            <div class="appraisal-bar">
+                <h1>Need to know the estimated value of your property?</h1>
+                <button>Get your appraisal now!</button>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="container">
+                <div>
+                    <img src="./image/footer-logo.png" alt="company logo">
+                </div>
+                <div class="footer-content">
+                    <div class="content-box">
+                        <h3>Contact</h3>
+                        <p>Office: realestate.com 
+                                No. 12, Real Estae Building, 
+                                Real Estate street, Kuwait.
+                                <br><br>
+                                Call Us: +965 0000 0000 
+                                +965 0000 0000</p>
+                    </div>
+
+                    <div class="content-box">
+                        <h3>latest news</h3>
+                        <p>Create new account
+                                        Login</p>
+                    </div>
+
+                    <div class="content-box">
+                        <h3>my account</h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum
+                                    dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="content-box">
+                        <div>
+                            <h3>newsletter signup</h3>
+                            <p>Subscribe to Our Newsletter to get the latest about M2:</p>
+                            <form>
+                                <input type="text" >
+                                <input type="submit">
+                            </form>
+                        </div>
+                        <div>
+                            <h3>CONNECT WITH US</h3>
+                            <img src="./image/twi.svg" alt="twitter logo">
+                            <img src="./image/insta.svg" alt="instagram logo">
+                            <img src="./image/g.svg" alt="google logo">
+                            <img src="./image/fb.svg" alt="facebook logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </footer>
+        <footer class="main-footer">
+                <p>Copyrights © 2016. All Rights Reserved by M2.</p>
+            </footer>
+
     </body>
 </html>
 

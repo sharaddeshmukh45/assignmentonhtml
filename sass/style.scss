@@ -1,5 +1,6 @@
 @import "variable";
 @import "mixin";
+@import "tab";
 
 body{
     font-family: loto-med;
@@ -8,6 +9,12 @@ body{
 .container{
     width: 80%;
     margin:auto;
+}
+
+.head-text{
+    text-align: right;
+    font-size: 10px;
+    margin-bottom: 0px;
 }
 
 header{
@@ -135,12 +142,25 @@ header{
     top : -150px;
     position: absolute;
     width: 100%;
+
+}
+
+.diamond{
+    top: 310px;
+    left: 14%;
+    position: absolute;
+    width:50px;
+    height: 50px;
+    background: #090909;
+    transform: rotate(45deg);
+    color:#4a6084;
+    background:#4a6084;
 }
 
 .boxes{
     display: flex;
-    flex-flow: wrap;
-   
+    
+    margin-top:15px;
     align-items: center;
     button{
         flex-basis: 23%;
@@ -167,13 +187,14 @@ header{
     }
 }
 
-.box-menu{
-    margin-top: 140px;
-}
+
+   
+
 
 .box-menu{
     background-color:$current-box-col;
-    padding: 30px;
+    margin-top: 12%;
+    padding: 10%;
     color: white;
     p{
         font-size: 20px;
@@ -202,6 +223,7 @@ header{
 
     div{
         flex-basis: 25%;
+        margin: 0px 10px;
     }
 }
 
@@ -223,6 +245,10 @@ header{
         border-radius: 100px;
         margin-right: 10px;
     }
+
+        .adv-btn{
+            text-align: right;
+        }
    
         button{
             background: $nav-blue-btn;
@@ -234,25 +260,342 @@ header{
         }
 }
 
-table,tr,td{
-    border: 1px solid $nav-blue-btn;
-    border-collapse: collapse;     
+.content{
+    display: flex;
+    div{
+        align-self: flex-end;
+    }
+    h3{
+        font-size: 15px;
+    }
+    
+    .blue-tab{
+       
+        
+        background: $nav-blue-btn;
+    }
+    .yellow-tab{
+
+    height: 74px;
+        align-items: center;
+        background: #d6ab28;
+        // padding-top: 20px;
+    }
+    .value{
+        background: white;
+        color: #4a6084;
+    }
+
+    .blue-tab , .yellow-tab,.value{
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid $nav-blue-btn
+    }
+
+   
+
+}
+
+.table{
+    display: flex;
+}
+
+.share-with{
+    margin: auto;
+    font-size: 20px;
+
+    
+    .social-meadi-icon {
+        display: flex;
+        width: 100%;
+       
+       
+        div{
+            border-radius: 100px;
+            background: white;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+           
+            img{
+                height: 20px;
+                width: 25px;
+            }
+        }
+
+    }
+    
+}
+
+.contact-bar{
+    background-image: url(../image/banner-bg.jpg);
+    color: white;
     text-align: center;
+    min-height: 300px;
+    
+    div{
+        padding-top:20px;
+    }
+
+    h1{
+        
+        font-size: 50px;
+    }
+
+    button{
+        height: 20px;
+        height: 50px;
+        width: 150px;
+        background: none;
+        border: 1px solid white;
+        color: white;
+        font-size: 20px;
+    }
+}
+// proderty-bar
+.new-proprety-bar{
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: #dedfe7;
+    h1{
+        margin-top:0px;
+        padding-top: 20px; 
+    }
 }
 
-tr,td{
-    width: 150px;
-    height: 50px;
+.proterties{
+    
+    display: flex;
+     flex-flow: wrap;
+     justify-content: center;
+    .propertybox{
+        flex-basis: 240px;
+        margin: 20px;
+    }
+    .property-img{   
+        img{
+         width: 240px;   
+        }
+    }
+
+   
+    table{
+        width: 100%;
+    }
+    tr{
+      font-size: 10px ;
+      p{
+        padding: 0px 10px;
+    }
+    }
+    img,p{
+        display:inline ;
+    }
+    
+
+    .right-side{
+        text-align: right;
+    }
+
+    div{
+        background-color: white;
+        padding-bottom: 5px;
+        p{
+            color:  #727272;
+        }
+    }
+
+    .property-name{
+        padding-left: 10px;
+    }
+
 }
 
-.property-blue{
-    background-color: $nav-blue-btn;
-}
-.value{
-    background-color: white;
-    color: black;
+.appraisal-bar{
+    display: flex;
+    
+   
+    button{
+        flex-basis: 30%;
+        margin: auto;
+        background-color: $nav-blue-btn;
+        color: white;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 15px;
+       
+    }
+
+    h1{
+        flex-basis: 70%;
+        text-align: center;
+    }
+
 }
 
-.property-yellow{
-    background-color: #d6ab28;
+
+.footer-section{
+    padding: 40px 0px;
+    margin-bottom: 0px;
+    background-color:#161616;
+    div{
+        text-align: center;
+    }
 }
+
+.footer-content{
+    display: flex;
+}
+
+.content-box{
+    flex-basis: 25%;
+    padding: 30px;
+    p{
+        color: #9aa2aa;
+    }
+    h3{
+        color: #4a525d;
+        text-transform: uppercase;
+    }
+
+    input{
+        background: none;
+        border: 1px solid #2e3338;
+        color: white;
+    }
+    img{
+        padding: 10px;
+    }
+}
+
+.main-footer{
+    background-color: #090909;
+    color: #777777;
+    text-align: center;
+    p{
+        margin: 0px;
+        padding: 20px;
+    }
+}
+
+// tab view
+@media  (max-width:992px){
+    .container{
+        width: 90%;
+    }
+    header{
+        display: block;
+        text-align: center;
+        margin: auto;
+        nav{
+           
+            ul{
+                display: block;
+                li,#nav-btn{
+                    display: block;
+                    margin: 10px 0px;
+                   
+                }
+            }
+        }   
+    }
+
+    .boxes{
+        flex-flow: wrap;
+        margin-bottom: 100px;
+        button{
+            flex-basis: 45%;
+        }
+    }
+
+    .box-menu{
+        margin-top: 400px;
+    }
+
+    .diamond{
+        top: 540px;
+        left: 14%;
+        position: absolute;
+        width:50px;
+        height: 50px;
+        background: #090909;
+        transform: rotate(45deg);
+        color:#4a6084;
+        background:#4a6084;
+    }
+
+    .form-part-text{
+        div{
+            flex-basis: 30%;
+            margin: 5px;
+        }
+    }
+
+    .appraisal-bar{
+        display: block;
+        text-align: center;
+        height: 100px;
+    }
+
+    .footer-content{
+        flex-flow: wrap;
+        .content-box{
+            flex-basis: 40%;
+        }
+
+    }
+
+    .table{
+        display: block;
+        font-size: 20px
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .box-list{
+        top: -50px;
+    }
+   
+    .boxes{
+        margin-bottom: 100px;
+        button{
+            flex-basis: 60%;
+            margin: auto;
+            margin-bottom:10px; 
+        }
+    }
+
+
+    .box-menu{
+        margin-top: 1030px;
+    }
+
+    .diamond{
+        top: 1060px;
+        left: 45%;   
+    }
+
+    .table{
+        display: block;
+        font-size: 20px
+    }
+
+    .appraisal-bar{
+        display: block;
+        text-align: center;
+        height: 150px;
+    }
+    
+    .footer-content{
+        flex-flow: wrap;
+        .content-box{
+            flex-basis: 80%;
+        }
+
+    }
+
+    
+}
+
